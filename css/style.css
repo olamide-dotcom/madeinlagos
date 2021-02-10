@@ -1,197 +1,114 @@
 body{
-    margin: 0;
     padding: 0;
+    margin: 0;
     background-color: #e9e6e1;
-}
-.img {
-    width: 25%;
-    height: auto;
-    float: right;
-    padding-top: 15rem;
-    margin-right: 20%;
-}
-.header{
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0),  #ddd5c2), url(../img/Wizkid.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    background-position: 20%;
-}
-.btn, .more{
-    cursor: pointer;
-    font-size: 0.875rem !important;
-    font-weight: 300 !important;
-    text-transform: uppercase: !important;
-    padding: 0.1875rem 0.3125rem !important;
-    line-height: 1 !important;
-    border: 1px solid #000 !important;
-    display: inline-block;
-    color: #000 !important;
-    margin-left: 32%;
-    font-family: "roboto", sans-serif !important;
-}
-.more{
-    margin-left: 39%;
-    margin-top: 1%;
-}
-.clip{
-
-    width: 100%;
-    height: 315px;
-}
-.download{
-    display: flex;
-    justify-content: space-around;
     font-family: sans-serif;
-    font-size: 100%;
 }
-a{
-    border:1px solid #000;
-    flex-basis: 7rem;
-    padding: 0.3125rem 1.125rem;
-    text-decoration: none;
-}
-h1{
-    font-size: 4rem;
-    font-weight: lighter;
-    margin-top: 5px;
-    font-family: "Backlash Script W05 Regular", sans-serif;
-}
-.music, .video, .footer{
-    display: flex;
-    justify-content: center;
+
+/* Landing Page */
+.landing{
     width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0),  #ddd5c2), url(../img/Wizkid_Desktop.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 5px solid #9da49d;
 }
-.footer{
-    margin-top: 15%;
+
+.landing .container{
+ width: 70%;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ justify-content: flex-start;
 }
-.line{
-    max-width: 100%;
-    height: 4px;
-    margin-top: -4px;
-    background-color: #9da49d;
+
+.landing .wizkid{
+    width: 300px;
+}
+.landing .madeinlagos{
+    width: 450px;
+    margin-top: -30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.button-link{
+    text-transform: uppercase;
+    padding: 4px 16px;
+    border: 1px solid black;
+    display: inline-block;
+    transition-duration: 0.3s;
+}
+
+.button-link:hover{
+    transform: scale(1.2);
+}
+.boxheader{
+    font-size: 40px;
+    text-align: center;
 }
 .albums{
+    display: flex;
+    justify-content: space-around;
+}
+.albumtext{
+    text-align: center;
+}
+.get{
+    text-align: center;
+}
+.musicvideos{
     display: flex;
     justify-content: space-evenly;
 }
-.album{
-    height: auto;
-    max-width: 100%;
-    
+.clip{
+    width: 100%;
+    height: 25rem;
 }
-p{
-    margin: 0.5em 0;
+.follow{
     text-align: center;
-    font-family: "roboto", sans-serif;
-    font-weight: 600;
 }
-.content{
-    display: flex;
-    justify-content: center;
-    margin: 2%;
-    max-width: 100%;
-}
-.albums{
-    display: flex;
-    justify-content: center;
-    margin: 2%;
-    max-width: 100%;
-}
-@media screen and (min-width: 768px) and (max-width: 1130px){
-    .header{
 
-        background-position: 25% 70%;
+
+@media screen and (min-width: 768px) and (max-width: 1130px){
+    .landing{
+
+        background-position: 50% 70%;
     }
 }
-@media screen and (max-width: 1050px){
-    .img{
-        width: 60%;
-        padding-top: 4rem;
-    }
-    .download{
-        font-size: 200%;
-    }
-    a{
-        flex-basis: 15rem;
-    }
-    .wizkid{
-        margin-bottom: 30%;;
-    }
-}
-@media screen and (max-width: 500px){
-    .header{
-        background-position: 30%;;
-    }
-    
-}
-@media screen and (max-width: 400px){
-    
-    .madeinlagos{
-        margin-top: 100px;
-    }
-    .header{
-        background-position: 29%
-    }
-    .albums{
-        display: block;
-    }
-    .btn{
-            font-size: 25px !important;
-            margin-left: 31%;
-        }
-    p{
-        font-size: 25px;
-    }
-    .content{
-            margin-left: 30px;
-    }
-    
-}
-@media screen and (max-width: 700px){
-    .header{
+@media screen and (max-width: 767px){
+    .landing{
         background-size: cover;
-        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0),  #ddd5c2), url(../img/Wizkid.jpg);
+        background-position: center center;
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0),  #ddd5c2), url(../img/Wizkid_Mobile.jpg);
         height: calc(100vh - 7.5em);
         align-items: stretch;
         padding-top: 5em;
         padding-bottom: 2.5em;
     }
-    .header .container{
+    .landing .container{
         width: 100%;
         height: inherit;
         justify-content: space-between;
     }
-
-    .header .madeinlagos{
+    .landing .wizkid{
+        width: 70%;
+    }
+    .landing .madeinlagos{
         width: 90%;
-        margin-top: -68px !improtant;
-        margin-bottom: 65px;
+        margin-top: -30px;
     }
-    .album {
-        max-width: 100%;
-
+    .albums{
+        display: grid;
     }
-    .wizkid{
-        margin-top: -600px;
-        
-    }
-    .img{
-        width: 60%;
-        padding-top: 34rem;
-    }
-}
-@media screen and (max-width: 630px){
-    .content{
-        display: list-item;
-        width: 90%;
-        margin-left: 9%;
-    }
-    .youtube{
-        width: 100%;
-    }
-    .clip{
-        width: 90%;
-        height: 50%;
+    .musicvideos{
+        display: grid;        
     }
 }
