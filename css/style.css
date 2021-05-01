@@ -105,10 +105,4 @@ a{
         width: 90%;
         margin-top: -30px;
     }
-    .albums{
-        display: grid;
-    }
-    .musicvideos{
-        display: grid;        
-    }
 }
